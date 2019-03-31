@@ -1,0 +1,10 @@
+<h3>List of all crawled urls</h3>
+
+{% if links %}
+    <ol>
+      {% for link in links %}
+        <li>{{ link }}</li>
+      {% endfor %}
+    </ol>
+
+    {% endif %}

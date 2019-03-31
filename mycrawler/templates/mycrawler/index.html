@@ -1,0 +1,19 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>test</h1>
+		<form action="/search" method="post">
+			{% csrf_token %}
+			<label for="url">
+				URL:
+				<input name="url" type="text" value=""/>
+			</label>
+			<label for="depth">
+				Depth:
+				<input name="depth" type="text" value=""/>
+			</label>
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>
